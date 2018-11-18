@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="resources/css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Portfolio</title>
+  </head>
+  <body id="home">
+
+<!-- Main Container -->
+    <div class="main-grid-container">
+
+      <!-- Header -->
+      <header id="header">
+        <nav class="main-nav">
+          <div class="signature">
+            <span>Austin A. Core</span>
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+          <a href="#home"><i class="fas fa-home fa-2x"></i></a>
+          <a href="#about"><i class="fas fa-info fa-2x"></i></a>
+          <a href="#portfolio"><i class="fas fa-briefcase fa-2x"></i></a>
+          <a href="#contact"><i class="fas fa-address-book fa-2x"></i></a>
+        </nav>
+      </header>
+
+      <!-- Banner -->
+      <div class="landing" data-aos="fade-in"
+                           data-aos-delay="350"
+                           data-aos-duration="3000">
+        <div class="landing-div">
+          <span class="landing-title">Welcome</span><br />
+          <span class="landing-about">I'm a Web Developer & Designer</span>
+          <span class="landing-portfolio">If you're looking to work with me please scroll down to the contact form or check out my <a href="#portfolio">Portfolio</a> to see some of my work</span>
+        </div>
+      </div>
+
+<!-- Sections Container -->
+      <div class="sections-grid-container">
+
+        <!-- Section One "About"-->
+        <section role="region" id="about" aria-labelledby="about-header" data-aos="fade-in"
+                                                                         data-aos-delay="350"
+                                                                         data-aos-duration="3000">
+
+          <a href=""><h2 id="about-header">About</h2></a>
+        </section>
+
+        <!-- Section Two "Portfolio"-->
+        <section role="region" id="portfolio" aria-labelledby="portfolio-header" data-aos="fade-in"
+                                                                                 data-aos-delay="350"
+                                                                                 data-aos-duration="3000">
+          <a href=""><h2 id="about-header">Portfolio</h2></a>
+        </section>
+
+        <!-- Section Three "Form" -->
+        <section role="region" id="contact" aria-labelledby="contact-header" data-aos="fade-in"
+                                                                             data-aos-delay="50"
+                                                                             data-aos-duration="3000">
+          <!-- <a href=""><h2 id="about-header">Contact</h2></a> -->
+          <div role="form" id="contact-info" aria-label="Contact information">
+            <form action="/my-handling-form-page" method="post" role="form">
+              <h2 id="contact-header">Contact me</h2>
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" role="textbox">
+              </div>
+              <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_mail" role="textbox">
+              </div>
+              <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </div>
+              <div class="button">
+                <button type="submit" role="button">Submit</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+      </div>
+
+<!-- Footer -->
+      <footer role="contentinfo">
+      <h2>Footer</h2>
+      </footer>
+
+    </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+</html>

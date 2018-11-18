@@ -1,0 +1,588 @@
+/* Site Stylesheet
+  1.   Global Styles
+  2.   Typography Styles
+  3.   Grid Styles
+  4.   Header Styles
+  5.   Section One
+  6.   Section Two
+  7.   Section Three
+  8.   Footer
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  margin: 0 auto;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-image: url('../images/wood.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* 2. Typography Styles
+======================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: gray;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 93px;
+}
+
+h2 {
+  font-size: 45px;
+  line-height: 66px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 46px;
+  color: grey;
+}
+
+h4 {
+  font-size: 23px;
+  line-height: 33px;
+}
+
+p {
+  color: ghostwhite;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 15px;
+}
+
+a {
+  color: #42A5F5;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+li {
+  color: #414546;
+  font-size: 16px;
+  line-height: 23px;
+  list-style: none;
+}
+
+img {
+
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+small {
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+
+/* 3. Grid Styles
+======================================== */
+
+.main-grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px 100vh 300vh 100px;
+}
+
+.sections-grid-container {
+  grid-row: 3;
+  grid-column: 1 / -1;
+  position: relative;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 100vh);
+}
+
+@media only screen and (max-width: 600px) {
+
+  .main-grid-container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 20em 1fr 100px;
+  }
+
+  .section-grid-container {
+    grid-row: 3;
+    margin: 0;
+  }
+
+  section a {
+    text-decoration: none;
+  }
+}
+
+/* 4. Header & Banner Styles
+======================================== */
+
+header {
+  grid-column: 1 / -1;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 8px 16px 5px rgba(0, 0, 0, 0.8), 0 6px 20px 5px rgba(0, 0, 0, 0.70);
+  background-color: black;
+  opacity: 0.60;
+}
+
+#header .signature {
+  font-size: 7.5em;
+  color: white;
+  font-family: 'Tangerine', cursive;
+  word-spacing: 20px;
+  opacity: 0.5;
+  padding-right: 15px;
+}
+
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'times new roman';
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav ul li {
+  list-style: none;
+  transition: 500ms;
+  margin: 15px;
+  padding: 15px;
+}
+
+.main-nav ul li a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  transition: 500ms;
+  padding: 3px;
+  opacity: 0.7;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.main-nav ul:hover li a {
+  transform: scale(1.3);
+  opacity: .5;
+  filter: blur(5px);
+}
+
+.main-nav ul li a:hover {
+  transform: scale(1.5);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  .signature {
+    display: none;
+  }
+
+  #header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #header ul {
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: .5em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  #header {
+    position: fixed;
+    height: 50px;
+    padding-top: 15px;
+    opacity: 1;
+    z-index: 3;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'times new roman';
+    position: relative;
+    background-color: black;
+    opacity: 0.60;
+    box-shadow: 0 8px 16px 5px rgba(0, 0, 0, 0.8), 0 6px 20px 5px rgba(0, 0, 0, 0.70);
+    width: 100%;
+  }
+
+  .fa-home {
+    color:white;
+  }
+
+  .fa-info {
+    color: white;
+  }
+
+  .fa-briefcase {
+    color: white;
+  }
+
+  .fa-address-book {
+    color: white;
+  }
+}
+
+.landing {
+  box-shadow: 0 8px 10px 5px rgba(0, 0, 0, 0.8), 0 6px 15px 15px rgba(0, 0, 0, 0.70);
+  margin-top: 13em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20em;
+  background-color: white;
+  opacity: 0.7;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.landing.aos-animate{
+  opacity: 0.5 !important;
+}
+
+
+.landing:after {
+  color: black;
+}
+
+.landing-title {
+  font-size: 9rem;
+  color: black;
+  text-shadow: -1px -1px 1px brown;
+  opacity: 0.8;
+}
+
+.landing-about {
+  font-size: 1.8em;
+}
+
+.landing-portfolio a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: brown;
+}
+
+.landing-portfolio {
+  font-size: 1.3em;
+  display: block;
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .landing-title {
+    font-size: 8rem;
+  }
+
+  .landing-about {
+    font-size: 1.6em;
+  }
+
+  .landing-portfolio a {
+    font-size: 1.3em;
+  }
+
+  .landing-portfolio {
+    font-size: 1.2em;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  .landing {
+    margin-top: 3em;
+    opacity: 1;
+  }
+
+  .landing-title {
+    font-size: 6rem;
+  }
+
+  .landing-about {
+    font-size: 1.6em;
+    word-spacing: 5px;
+  }
+
+  .landing-portfolio a {
+    font-size: 1.3em;
+  }
+
+  .landing-portfolio {
+    font-size: 1.2em;
+    padding: 10px;
+    word-spacing: 3px;
+  }
+
+}
+
+/* 5. Section One & About
+======================================== */
+
+#about {
+  position: relative;
+  margin-top: 100px;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about h2 {
+  color: white;
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #about {
+    margin-top: 8em;
+    grid-row: 1;
+    align-items: flex-start;
+    height: 65px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    box-shadow: 0 3px 10px 7px rgba(0, 0, 0, 0.80), 0 1px 15px 15px rgba(0, 0, 0, 0.7);
+  }
+
+  #about h2 {
+    margin: 0;
+    opacity: 0.6;
+  }
+}
+
+/* 6. Section Two & Portfolio
+======================================== */
+
+#portfolio {
+  position: relative;
+  color: white;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio h2 {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #portfolio {
+    margin-top: 4em;
+    grid-row: 2;
+    align-items: flex-start;
+    height: 65px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    box-shadow: 0 3px 10px 7px rgba(0, 0, 0, 0.80), 0 1px 15px 15px rgba(0, 0, 0, 0.7);
+  }
+
+  #portfolio h2 {
+    margin: 0;
+    opacity: 0.6;
+  }
+}
+
+/* 7. Section Three & Form
+======================================== */
+
+#contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  grid-column: 1 / -1;
+  grid-row: 3;
+  position: relative;
+}
+
+form {
+  margin-top: 10em;
+  height: 400px;
+  width: 500px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  transition: 1s ease-in;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.70), 0 1px 20px 1px rgba(0, 0, 0, 0.7);
+}
+
+form:hover {
+  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.70), 0 1px 20px 1px rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.40);
+}
+
+@media only screen and (max-width: 470px) {
+
+  form {
+    transform: scale(.8);
+  }
+
+  form:hover {
+    box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.70), 0 1px 20px 1px rgba(0, 0, 0, 0.7);
+    transform: none;
+  }
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+input, textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+  color: grey;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  text-align: center;
+}
+
+button {
+  margin-left: .5em;
+  padding: 2px;
+  width: 150px;
+}
+
+#contact h2 {
+  color: white;
+  text-align: center;
+  font-size: 4em;
+  opacity: 0.6;
+  margin: .3em 0 .5em 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #contact {
+    margin-top: 4em;
+    grid-row: 3;
+    align-items: flex-start;
+    height: 65px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    box-shadow: 0 3px 10px 7px rgba(0, 0, 0, 0.80), 0 1px 15px 15px rgba(0, 0, 0, 0.7);
+  }
+
+  #contact h2 {
+    margin: 0;
+    color: white;
+    font-size: 3em;
+  }
+
+  #contact-info {
+    display: none;
+  }
+}
+/* 8. Footer
+======================================== */
+
+footer {
+  text-align: center;
+  margin: 0;
+  grid-column: 1 / -1;
+  grid-row: 5;
+  background-color: black;
+  opacity: 0.60;
+  box-shadow: 0 3px 10px 7px rgba(0, 0, 0, 0.80), 0 1px 15px 15px rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 600px) {
+
+  footer {
+    grid-row: 4;
+    display: none;
+  }
+
+  footer h2 {
+  }
+}
