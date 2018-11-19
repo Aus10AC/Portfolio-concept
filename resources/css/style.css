@@ -284,7 +284,7 @@ header {
   justify-content: center;
   height: 20em;
   background-color: white;
-  opacity: 0.7;
+  opacity: 0.85;
   grid-column: 1 / -1;
   grid-row: 2;
   text-align: center;
@@ -375,7 +375,6 @@ header {
 
 #about {
   position: relative;
-  margin-top: 100px;
   grid-column: 1 / -1;
   grid-row: 2;
   height: 100vh;
@@ -386,7 +385,6 @@ header {
 
 #about h2 {
   color: white;
-  margin-top: 100px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -408,6 +406,57 @@ header {
   }
 }
 
+.port-box {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.40), 0 0px 20px 1px rgba(0, 0, 0, 0.40);
+  margin: 5em;
+}
+
+.port-box .port-content {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #794017;
+  border-radius: 10px;
+}
+
+.port-box .port-content:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .1);
+  transition: 1s;
+  pointer-events: none;
+}
+
+.port-box:hover .port-content:before {
+  left: -50%;
+}
+
+.port-box .port-content h4 {
+  margin: 20px 0 30px 0;
+  padding: 0;
+  font-size: 2.5em;
+}
+
+.port-box .port-content  {
+  color: white;
+  opacity: 0.6;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
 /* 6. Section Two & Portfolio
 ======================================== */
 
@@ -420,6 +469,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 #portfolio h2 {
@@ -443,6 +493,19 @@ header {
     margin: 0;
     opacity: 0.6;
   }
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
 }
 
 /* 7. Section Three & Form
@@ -598,15 +661,21 @@ ul {
     box-shadow: 0 3px 10px 7px rgba(0, 0, 0, 0.80), 0 1px 15px 15px rgba(0, 0, 0, 0.7);
   }
 
-  #contact h2 {
+  #contact h2#about-header {
     margin: 0;
     color: white;
     font-size: 3em;
+    opacity: 0.6;
+    display: block;
   }
 
   #contact-info {
     display: none;
   }
+}
+
+#contact h2#about-header {
+  display: none;
 }
 /* 8. Footer
 ======================================== */
