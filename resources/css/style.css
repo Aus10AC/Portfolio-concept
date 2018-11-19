@@ -408,10 +408,14 @@ header {
 
 .port-box {
   position: relative;
-  width: 340px;
-  height: 340px;
+  width: 400px;
+  height: 400px;
   box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.40), 0 0px 20px 1px rgba(0, 0, 0, 0.40);
   margin: 5em;
+}
+
+.port-content h4 {
+
 }
 
 .port-box .port-content {
