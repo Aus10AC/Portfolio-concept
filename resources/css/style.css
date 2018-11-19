@@ -40,7 +40,6 @@ body {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
   color: gray;
@@ -193,8 +192,8 @@ header {
   transition: 500ms;
   padding: 3px;
   opacity: 0.7;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+  border-bottom: 2px solid dodgerblue;
+  border-top: 2px solid dodgerblue;
 }
 
 .main-nav ul:hover li a {
@@ -205,8 +204,10 @@ header {
 
 .main-nav ul li a:hover {
   transform: scale(1.5);
-  opacity: 1;
+  opacity: .8;
   filter: blur(0);
+  border-bottom: none;
+  border-top: none;
 }
 
 .mobile-nav {
@@ -289,6 +290,7 @@ header {
   grid-row: 2;
   text-align: center;
   position: relative;
+  border: 2px solid dodgerblue;
 }
 
 .landing.aos-animate{
@@ -303,23 +305,25 @@ header {
 .landing-title {
   font-size: 9rem;
   color: black;
-  text-shadow: -1px -1px 1px brown;
+  text-shadow: -1px -1px 1px dodgerblue;
   opacity: 0.8;
 }
 
 .landing-about {
   font-size: 1.8em;
+  color: dodgerblue;
 }
 
 .landing-portfolio a {
   text-decoration: none;
   font-size: 1.3em;
-  color: brown;
+  color: dodgerblue;
 }
 
 .landing-portfolio {
   font-size: 1.3em;
   display: block;
+  color: black;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -383,8 +387,8 @@ header {
   align-items: center;
 }
 
-#about h2 {
-  color: white;
+#about h4 {
+  color: cornflowerblue;
 }
 
 @media only screen and (max-width: 600px) {
@@ -415,7 +419,12 @@ header {
 }
 
 .port-content h4 {
+  color: dodgerblue;
+}
 
+.port-content a {
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 .port-box .port-content {
@@ -530,7 +539,7 @@ form {
   height: 430px;
   width: 500px;
   padding: 1em;
-  border: 1px solid #CCC;
+  border: 1px solid dodgerblue;
   border-radius: 1em;
   transition: 1s ease-in;
   position: relative;
@@ -595,7 +604,7 @@ textarea {
   padding: 8px;
   border-radius: 5%;
   background-color: ghostwhite;
-  color: rgba(0, 0, 0, 0.5);
+  color: dodgerblue;
   width: 100px;
   transition: 600ms;
   text-transform: uppercase;
@@ -604,7 +613,7 @@ textarea {
 
 .form-button button:hover {
   background-color: rgba(255, 255, 255, 0.6);
-  color: rgba(0, 0, 0, 0.3);
+  color: dodgerblue;
 }
 
 #contact h2 {
