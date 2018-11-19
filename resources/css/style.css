@@ -288,7 +288,6 @@ header {
   grid-column: 1 / -1;
   grid-row: 2;
   text-align: center;
-  z-index: 2;
   position: relative;
 }
 
@@ -513,7 +512,7 @@ input, textarea {
 
 input:focus, textarea:focus {
   border-color: #000;
-  color: grey;
+  color: black;
 }
 
 textarea {
@@ -618,7 +617,7 @@ footer {
   grid-column: 1 / -1;
   grid-row: 5;
   background-color: black;
-  opacity: 0.60;
+  opacity: 0.50;
   box-shadow: 0 3px 10px 7px rgba(0, 0, 0, 0.80), 0 1px 15px 15px rgba(0, 0, 0, 0.7);
 }
 
