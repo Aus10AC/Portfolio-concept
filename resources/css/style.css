@@ -461,7 +461,7 @@ header {
 }
 
 form {
-  height: 400px;
+  height: 430px;
   width: 500px;
   padding: 1em;
   border: 1px solid #CCC;
@@ -521,22 +521,69 @@ textarea {
   height: 5em;
 }
 
-.button {
+.form-button {
   text-align: center;
 }
 
-button {
-  margin-left: .5em;
-  padding: 2px;
-  width: 150px;
+.form-button button {
+  padding: 8px;
+  border-radius: 5%;
+  background-color: ghostwhite;
+  color: rgba(0, 0, 0, 0.5);
+  width: 100px;
+  transition: 600ms;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-button button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 #contact h2 {
   color: white;
   text-align: center;
   font-size: 4em;
-  opacity: 0.6;
+  opacity: 0.9;
   margin: .3em 0 .5em 0;
+}
+
+.icons,
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.icons ul li {
+  display: inline;
+}
+
+.icons ul li a {
+  transition: 1000ms;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.icons a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.icons ul:hover li a i {
+  transform: scale(1.1);
+  opacity: .5;
+  filter: blur(3px);
+}
+
+.icons ul li a i:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  filter: blur(0);
 }
 
 @media only screen and (max-width: 600px) {
