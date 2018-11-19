@@ -109,7 +109,7 @@ small {
 .main-grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100px 100vh 300vh 100px;
+  grid-template-rows: 100px 100vh 300vh; /* 100px; */
 }
 
 .sections-grid-container {
@@ -680,6 +680,7 @@ ul {
 /* 8. Footer
 ======================================== */
 
+/*
 footer {
   text-align: center;
   margin: 0;
@@ -700,3 +701,4 @@ footer {
   footer h2 {
   }
 }
+*/

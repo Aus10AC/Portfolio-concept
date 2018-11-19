@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="example.ico" type="image/x-icon">
+    <link rel="icon" href="example.ico" type="image/x-icon">
+    <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/example.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Unlock" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <title>Tournaments, Leagues and Wagers all-in-one with an entigrated social experience</title>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <ul id="dropwdown1" class="dropdown-content">
+        <li><a href="#!">Advertise</a></li>
+        <li><a href="#!">Contact us</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">What's our mission?</a></li>
+      </ul>
+      <nav role="navigation">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo blue-text"><img src="resources/images/logonew.png" class="logopicture"></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html" class="blue-text">Home</a></li>
+            <li><a href="" class="blue-text">About</a></li>
+            <li><a href="" class="blue-text">FAQ</a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger blue-text" href="#!" data-target="dropdown1">More<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="sec1" role="region" aria-labelledby="first-header">
+        <header class="header-container" id="first-header">
+
+          <div class="side">
+            <h1>What is Trophy Count?</h1>
+            <div class="inner">
+              <p>
+                Trophy Count is the next generation of tournament websites. We're taking
+                everything you love about the current sites and combining them into an all-in-One
+                Web application.
+              </p>
+            </div>
+          </div>
+
+          <div class="object">
+            <div>
+              <img src="resources/images/logonew.png">
+              <h1 data-text="Trophy Count">Trophy Count</h1>
+            </div>
+            <div class="countdown"></div>
+            <div>
+              <p>Let me know when you launch</p>
+            </div>
+            <div id="form" class="form-group mb-2">
+              <input onfocus="if(this.value == 'Enter your email...'){this.value = '';}" type="text" [B]onblur="if(this.value == ''){this.value='Enter your email...';}"[/B] id="email" value="Enter your email..." />
+              <button onclick="popUp()" type="submit" id="buttonn" class="btn btn-info mb-2">Submit</button>
+            </div>
+            <p>Follow our social media</p>
+            <div class="font-awesome-icons">
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="https://twitter.com/TrophyCount?lang=en" target="_blank" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-youtube"></a>
+            </div>
+          </div>
+
+          <div class="side">
+            <h1>What's our mission?</h1>
+            <div class="inner">
+              <p>
+                We aim to eliminate all of the negative behaviors in the current system
+                and provide a clean, non-toxic approach to doing what you love,
+                competitive gaming.
+              </p>
+            </div>
+          </div>
+
+
+          <!-- Loading animation -->
+
+
+          <div id="indicator" class="indicator">
+            <a href="#about">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+
+
+        </header>
+      </section>
+
+      <section class="sec2" id="about" role="region">
+         <!-- <div class="title">
+          <h2>What is Trophy Count?</h2>
+          <p>
+            In short, Trophy Count is an eSports application that can be used on any device. We aim to provide a FREE premium service completely
+            unmatched by any other site that you're used to.
+          </p>
+          <button>Learn more</button>
+        </div> -->
+      </section>
+
+
+      <section class="sec3" role="region">
+
+        <div class="box">
+          <h2>Contact</h2>
+          <form>
+            <div class="inputBox">
+              <input type="text" name="" reguired="">
+              <label>Name</label>
+            </div>
+            <div class="inputBox">
+              <input type="password" name="" required="">
+              <label>Email</label>
+            </div>
+            <button onclick="popUp()" type="submit" id="buttonnn" class="btn btn-info mb-2">Submit</button>
+          </form>
+        </div>
+
+        <div class="FAQ">
+          <h3>FAQ</h3>
+          <!--
+          <ol>
+            <li>asdf</li>
+            <li>asdf</li>
+            <li>asdf</li>
+            <li>asdf</li>
+            <li>asdf</li>
+            <li>asdf</li>
+            <li>asdf</li>
+            <li>asdf</li>
+          </ol>
+        </div>
+        -->
+      </section>
+
+      <footer class="page-footer" role="contentinfo">
+
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="blue-text">Trophy Count</h5>
+              <p class="black-text text-lighten-4">Trophy Count LLC. All Rights Reserved. <a href="">Terms of Service.</a> <a href="">Privacy Policy</a></p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="blue-text">Resources</h5>
+              <ul>
+                <li><a class="black-text text-lighten-3" href="#!">FAQ</a></li>
+                <li><a class="black-text text-lighten-3" href="#!">About</a></li>
+                <li><a class="black-text text-lighten-3" href="#!">Advertise</a></li>
+                <li><a class="black-text text-lighten-3" href="#!">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container black-text">
+          © 2018 Copyright Text
+          <a class="blue-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="resources/js/emailEnter.js"></script>
+  <script src="resources/js/example.js"></script>
+  <script src="resources/js/sweetalert.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="resources/js/scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
